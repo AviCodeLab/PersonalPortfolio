@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+/* Navbar Goes Here */
+#container #navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 15em 1em 8em;
+}
+#container #navbar h1{
+    font-size: 2.4em;
+    cursor: pointer;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+#container #navbar ul{
+    display: flex;
+    gap: 3em;
+}
+#container #navbar ul li{
+    list-style: none;
+    font-size: 1.5em;
+    font-family: "Afacad Flux", sans-serif;
+    cursor: pointer;
+}
+
+/* Main Goes Here */
+#container #main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#container #main .box{
+    width: 45vw;
+    height: 75vh;
+}
+#container #main #box1{
+    padding:7em 0em 0em 8em;
+}
+#container #main #box1 h1{
+    font-size: 5em;
+    font-family: montserrat;
+    font-weight: 700;
+}
+#container #main #box1 p{
+    font-size: 1.5em;
+    font-family: montserrat;
+    font-weight: 400;
+}
+#container #main #box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* About Goes Here */
+#about {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+}
+#about > h1{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-family: montserrat;
+    padding: 0.5em 0em 0.5em 0em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#about #about-boxes{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about .about-box{
+    width: 45vw;
+    height: 50vh;
+    overflow: hidden;
+}
+#about #about-boxes #photo{
+    padding: 0em 0em 0em 10em;
+}
+#about #about-boxes #photo img{
+    width: 70%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#about #about-boxes #bio{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+#about #about-boxes #bio h1{
+    font-family: montserrat;
+    font-weight: 700;
+}
+#about #about-boxes #bio h2{
+    font-size: 1.3em;
+    font-family: montserrat;
+    font-weight: 500;
+}
+#about #about-boxes #bio p{
+    width: 20em;
+    font-size: 1em;
+    font-family: montserrat;
+    font-weight: 400;
+}
+#about #about-boxes #bio #skills{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+#about #about-boxes #bio #skills h3{
+    font-family: montserrat;
+    font-weight: 700;
+}
+#about #about-boxes #bio #skills #skills-box img{
+    width: 3em;
+}
+
+/* Projects goes here */
+#projects{
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+    font-family: montserrat;
+}
+#projects > h1{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#projects #project{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#projects #project .project-box{
+    width: 25vw;
+    height: 50vh;
+}
+#projects #project .project-box .image{
+    width: 50%;
+    height: 50%;
+}
+#projects #project .project-box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Footer goes here */
+#footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: #dadada;
+}
+#footer > h1{
+    width: 100vw;
+    height: 10vh;
+    font-family: montserrat;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#footer #footer-boxes{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer #footer-boxes #email{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+}
+#footer #footer-boxes #email input{
+    width: 100%;
+    height: 2em;
+    padding: 1em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+}
+#footer #footer-boxes #email textarea{
+    width: 100%;
+    height: 8em;
+    padding: 1em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+}
+#footer #footer-boxes #email button{
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
